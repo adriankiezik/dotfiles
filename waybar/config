@@ -16,9 +16,9 @@
       "exec": "/usr/bin/python3 ~/.config/waybar/spotify-module.py --player spotify",
       "format": "{}  ",
       "return-type": "json",
-      "on-click": "playerctl play-pause",
-      "on-scroll-up": "playerctl next",
-      "on-scroll-down": "playerctl previous"
+      "on-click": "playerctl --player=spotify play-pause",
+      "on-scroll-up": "playerctl --player=spotify next",
+      "on-scroll-down": "playerctl --player=spotify previous"
     },
     "clock": {
       "format": "<span color='#b4befe'> </span>{:%H:%M}",
