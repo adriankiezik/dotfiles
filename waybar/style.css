@@ -12,7 +12,7 @@ window#waybar {
 
 #workspaces {
   border-radius: 10px;
-  background-color: #11111b;
+  background-color: #11111B;
   color: #b4befe;
   margin-top: 15px;
   margin-right: 15px;
@@ -23,13 +23,13 @@ window#waybar {
 }
 
 #workspaces button {
-  background: #11111b;
+  background: #11111B;
   color: #b4befe;
 }
 
-#clock, #pulseaudio {
+#clock, #pulseaudio, #custom-spotify {
   border-radius: 10px;
-  background-color: #11111b;
+  background-color: #11111B;
   color: #cdd6f4;
   margin-top: 15px;
   padding-left: 10px;

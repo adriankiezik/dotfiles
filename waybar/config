@@ -2,7 +2,7 @@
   "layer": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio"],
+    "modules-right": ["custom/spotify", "pulseaudio"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "tooltip": false,
@@ -11,6 +11,14 @@
         "active": "",
         "default": ""
       }
+    },
+    "custom/spotify": {
+      "exec": "/usr/bin/python3 ~/.config/waybar/spotify-module.py --player spotify",
+      "format": "{}  ",
+      "return-type": "json",
+      "on-click": "playerctl play-pause",
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous"
     },
     "clock": {
       "format": "<span color='#b4befe'> </span>{:%H:%M}",
